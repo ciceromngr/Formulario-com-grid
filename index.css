@@ -1,4 +1,6 @@
-
+:root {
+    
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -55,6 +57,7 @@ header {
 .nome {
     grid-area: n;  
 }
+
 .nome input {
     font-size: 16px;
     text-align: center;
@@ -62,16 +65,19 @@ header {
     box-sizing: border-box;
     padding-top: 5px;
     margin-top: 10px;
-    border: 0;
+    border: 1px;
     background-color: transparent;
     border-bottom: 2px solid rgb(186, 186, 248);
     font: 700;
     color: white;
-    transition: .2s ease-in-out;/*especifica uma transicao com inio e fim lentos*/
     border-radius: 15px;
+    animation-name: teste;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
-.nome input:focus {
+.nome input:hover {
     border-bottom: 2px solid rgb(52,179,214);
+   
 }
 .nome label {
     color: white;
@@ -96,7 +102,7 @@ header {
     transition: .2s ease-in-out;/*especifica uma transicao com inio e fim lentos*/
     border-radius: 15px;
 }
-.sobrenome input:focus {
+.sobrenome input:hover {
     border-bottom: 2px solid rgb(52,179,214);
 }
 .sobrenome label {
@@ -122,12 +128,11 @@ header {
     transition: .2s ease-in-out;/*especifica uma transicao com inio e fim lentos*/
     border-radius: 15px;
 }
-.cpf input:focus {
+.cpf input:hover {
     border-bottom: 2px solid rgb(52,179,214);
 }
 .cpf label {
-    color: white;
-    
+    color: white;  
 }
 /*-------------------------*/
 /*-----------EMAIL---------*/
@@ -150,7 +155,7 @@ header {
     transition: .2s ease-in-out;/*especifica uma transicao com inio e fim lentos*/
     border-radius: 15px;
 }
-.email input:focus {
+.email input:hover {
     border-bottom: 2px solid rgb(52,179,214);
 }
 .email label {
@@ -176,7 +181,7 @@ header {
     transition: .2s ease-in-out;/*especifica uma transicao com inio e fim lentos*/
     border-radius: 15px;
 }
-.idade input:focus {
+.idade input:hover {
     border-bottom: 2px solid rgb(52,179,214);
 }
 .idade label {
@@ -213,7 +218,6 @@ header {
     display: flex;
 }
 /*------------------------*/
-
 
 .confirmacao {
     grid-area: b;
